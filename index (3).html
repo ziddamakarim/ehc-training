@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EHC Training - Latihan Digital Koordinasi Mata dan Tangan (Lempar Tangkap Bola)</title>
+<meta name="description" content="Paket latihan digital tes motorik EHC (Eye-Hand Coordination): lempar tangkap bola, game training, level latihan, program latihan, dan hasil perkembangan murid.">
+<meta name="keywords" content="EHC, koordinasi mata dan tangan, lempar tangkap bola, tes motorik, latihan motorik, game training, pendidikan jasmani">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#2f6bff">
+<!-- GANTI alamat di bawah dengan domain Anda setelah deploy -->
+<link rel="canonical" href="https://NAMA-ANDA.vercel.app/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="EHC Training - Latihan Koordinasi Mata dan Tangan">
+<meta property="og:description" content="Latihan digital lempar tangkap bola untuk koordinasi mata dan tangan.">
+<meta property="og:url" content="https://NAMA-ANDA.vercel.app/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%A5%8E%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"EHC Training","description":"Paket latihan digital tes motorik EHC lempar tangkap bola untuk koordinasi mata dan tangan.","applicationCategory":"EducationalApplication","inLanguage":"id","operatingSystem":"Web"}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef2ff;--card:#fff;--ink:#0f1f4a;--mute:#5a6788;--line:#dde4f7;--pri:#2f6bff;--pri2:#6c8dff;--acc:#ffb703;--bad:#e5484d;--ok:#12a594;--r:22px;--sh:0 12px 30px -14px rgba(15,31,74,.3)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0a1230;--card:#111c44;--ink:#eaf0ff;--mute:#9aa8d6;--line:#22306a;--pri:#6c8dff;--pri2:#2f6bff;--sh:0 12px 30px -14px rgba(0,0,0,.7)}}
+:root[data-theme=dark]{--bg:#0a1230;--card:#111c44;--ink:#eaf0ff;--mute:#9aa8d6;--line:#22306a;--pri:#6c8dff;--pri2:#2f6bff;--sh:0 12px 30px -14px rgba(0,0,0,.7)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:Nunito,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-weight:500;color:var(--ink);line-height:1.6;background:radial-gradient(900px 420px at 85% -8%,rgba(47,107,255,.16),transparent),var(--bg)}
+h1,h2{font-family:Fredoka,Nunito,system-ui,sans-serif;letter-spacing:-.01em}
+h1{font-size:clamp(1.6rem,4vw,2.3rem);margin:.1em 0;line-height:1.15}
+h2{font-size:1.2rem;margin:0 0 10px}
+.sub{color:var(--mute);margin:0 0 20px;max-width:60ch}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+.app{display:grid;grid-template-columns:260px minmax(0,1fr);min-height:100dvh}
+.side{position:sticky;top:0;height:100dvh;display:flex;flex-direction:column;gap:18px;padding:22px 16px;background:var(--card);border-right:1px solid var(--line)}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink)}
+.logo .lg{display:grid;place-items:center;width:44px;height:44px;border-radius:14px;background:linear-gradient(135deg,#ffb703,#ff8a00);font-size:1.5rem;box-shadow:0 8px 18px -8px #ff8a00}
+.logo b{display:block;font:700 1.15rem/1.1 Fredoka,sans-serif}.logo small{color:var(--mute);font-size:.72rem;font-weight:700}
+nav{display:flex;flex-direction:column;gap:4px;flex:1}
+nav a{display:flex;align-items:center;gap:12px;padding:11px 14px;border-radius:14px;color:var(--mute);text-decoration:none;font-weight:800;font-size:.95rem;transition:background .15s,color .15s}
+nav a:hover{background:var(--bg);color:var(--ink)}
+nav a.on{background:linear-gradient(135deg,#2f6bff,#4f46e5);color:#fff;box-shadow:0 10px 20px -10px #2f6bff}
+nav .ic{font-size:1.25rem;width:1.6rem;text-align:center}
+#theme{display:flex;align-items:center;gap:8px;justify-content:center;background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:10px;font:inherit;font-weight:800;color:var(--ink);cursor:pointer}
+.col{min-width:0;display:flex;flex-direction:column}
+main{width:100%;max-width:1040px;margin:0 auto;padding:28px 24px 40px;flex:1}
+footer{text-align:center;color:var(--mute);font-size:.82rem;padding:16px 16px 28px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:20px;box-shadow:var(--sh)}
+.grid{display:grid;gap:16px;margin-top:16px;grid-template-columns:repeat(auto-fit,minmax(min(100%,210px),1fr))}
+.grid.two{grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr))}
+.grid.stats{grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+.hero{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:30px;border-radius:30px;color:#fff;overflow:hidden;background:linear-gradient(120deg,#0f1f4a 0%,#2446c9 60%,#2f6bff);box-shadow:0 24px 50px -24px #2446c9}
+.hero h1{margin-bottom:.2em}.hero p{margin:0 0 18px;opacity:.9;max-width:46ch}
+.hero .btn{background:var(--acc);color:#2b1d00;box-shadow:none}
+.hero .btn.ghost{background:rgba(255,255,255,.14);color:#fff;border:1px solid rgba(255,255,255,.35)}
+.ball{width:150px;flex:none}
+.bb{animation:bnc 1.3s infinite}.sh{transform-origin:80px 186px;animation:shd 1.3s infinite}
+@keyframes bnc{0%,100%{transform:translateY(0);animation-timing-function:cubic-bezier(.5,0,1,.6)}50%{transform:translateY(58px);animation-timing-function:cubic-bezier(0,.4,.5,1)}}
+@keyframes shd{0%,100%{transform:scale(.7);opacity:.5}50%{transform:scale(1.15);opacity:1}}
+.row{display:flex;gap:10px;flex-wrap:wrap}
+.btn{display:inline-block;background:linear-gradient(135deg,#2f6bff,#4f46e5);color:#fff;border:0;border-radius:14px;padding:11px 20px;font:800 .95rem Nunito,sans-serif;cursor:pointer;text-decoration:none;box-shadow:0 10px 20px -10px #2f6bff;transition:transform .12s}
+.btn:hover{transform:translateY(-2px)}.btn:active{transform:scale(.97)}.btn:disabled{opacity:.5;cursor:default;transform:none}
+.btn.alt{background:transparent;color:var(--ink);border:1px solid var(--line);box-shadow:none}
+.btn.del{background:var(--bad);box-shadow:none}
+.stat i{display:grid;place-items:center;width:44px;height:44px;border-radius:14px;font-style:normal;font-size:1.35rem;margin-bottom:10px}
+.c1{background:rgba(47,107,255,.15)}.c2{background:rgba(18,165,148,.18)}.c3{background:rgba(255,183,3,.24)}.c4{background:rgba(229,72,77,.15)}
+.stat b{display:block;font:700 2rem/1 Fredoka,sans-serif}.stat small{color:var(--mute);font-weight:700}
+label{display:block;font-size:.85rem;font-weight:800;margin:12px 0 5px}
+input,select{width:100%;padding:12px 14px;border-radius:14px;border:1.5px solid var(--line);background:var(--bg);color:var(--ink);font:inherit}
+input:focus,select:focus{outline:3px solid rgba(47,107,255,.35);border-color:var(--pri)}
+table{width:100%;border-collapse:collapse;font-size:.92rem}
+th,td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--line)}
+th{color:var(--mute);font-weight:800;font-size:.8rem}
+.wrap{overflow-x:auto}
+.bars{display:flex;align-items:flex-end;gap:10px;height:150px;padding-top:22px}
+.bars div{flex:1;background:linear-gradient(#6c8dff,#2f6bff);border-radius:10px 10px 4px 4px;min-height:6px;position:relative}
+.bars div span{position:absolute;top:-20px;left:0;right:0;text-align:center;font-size:.75rem;font-weight:800;color:var(--mute)}
+.tag{display:inline-block;background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:3px 12px;font-size:.8rem;font-weight:800;color:var(--mute)}
+.ok{color:var(--ok);font-weight:800}.lock{opacity:.6}
+.lv{position:relative;overflow:hidden}
+.lvn{position:absolute;right:14px;top:4px;font:700 4.5rem/1 Fredoka,sans-serif;color:var(--pri);opacity:.13}
+.prog{height:10px;background:var(--bg);border-radius:99px;overflow:hidden;margin:10px 0 6px}
+.prog i{display:block;height:100%;background:linear-gradient(90deg,#12a594,#2ec4b6);border-radius:99px}
+.pr .wk{display:inline-block;background:linear-gradient(135deg,#ffb703,#ff8a00);color:#2b1d00;font-weight:800;border-radius:99px;padding:4px 16px;margin-bottom:10px}
+.pr ul{list-style:none;margin:0;padding:0}.pr li{padding:8px 0;border-top:1px solid var(--line)}
+.hud{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}.hud .tag{font-size:.95rem;padding:6px 16px}
+canvas{width:100%;max-width:640px;display:block;margin:14px auto;background:#13286b;border-radius:20px;touch-action:none;cursor:none;box-shadow:var(--sh)}
+.msg{background:var(--bg);border:2px dashed var(--pri);border-radius:18px;padding:14px;margin-top:12px;text-align:center}.stars{font-size:1.9rem}
+details{border-bottom:1px solid var(--line);padding:12px 0}summary{font-weight:800;cursor:pointer}
+@media(max-width:860px){
+.app{display:block}
+.side{position:static;height:auto;flex-direction:row;align-items:center;justify-content:space-between;padding:12px 16px;border:0;background:transparent}
+.logo small,#theme span{display:none}#theme{padding:9px 12px}
+nav{position:fixed;inset:auto 0 0 0;z-index:30;flex-direction:row;gap:2px;overflow-x:auto;padding:6px 8px calc(6px + env(safe-area-inset-bottom,0px));background:var(--card);border-top:1px solid var(--line);scrollbar-width:none}
+nav a{flex-direction:column;gap:2px;min-width:76px;padding:7px 6px;font-size:.68rem;text-align:center;white-space:nowrap;border-radius:12px}
+nav .ic{font-size:1.3rem}
+main{padding:6px 16px 24px}footer{padding-bottom:96px}
+.hero{padding:22px;border-radius:26px}.ball{width:84px}
+}
+@media(prefers-reduced-motion:reduce){.bb,.sh{animation:none}html{scroll-behavior:auto}}
+.anim{--acc:#e8590c;--acc2:#1c7ed6;--ground:#cfe6c4;--sky:#eaf4fb;--muted:var(--mute);--fg:var(--ink)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]) .anim{--ground:#254129;--sky:#16232c}}
+:root[data-theme=dark] .anim{--ground:#254129;--sky:#16232c}
+.anim .tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+.anim .tabs button{flex:1 1 180px;padding:10px 12px;border:2px solid var(--line);background:var(--card);color:var(--fg);border-radius:10px;font:inherit;font-weight:600;cursor:pointer;text-align:left}
+.anim .tabs button[aria-selected="true"]{border-color:var(--acc);background:var(--acc);color:#fff}
+.anim .stage{background:var(--sky);border:2px solid var(--line);border-radius:14px;overflow:hidden}
+.anim svg{display:block;width:100%;height:auto}
+.anim .cap{padding:10px 14px;background:var(--card);border-top:2px solid var(--line);min-height:3.6em}
+.anim .cap b{display:block;font-size:1.05rem}
+.anim .ctl{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0 18px}
+.anim .ctl button,.anim .ctl select{width:auto;padding:8px 14px;border:2px solid var(--line);background:var(--card);color:var(--fg);border-radius:8px;font:inherit;cursor:pointer}
+.anim .ctl input[type=range]{flex:1 1 160px;width:auto;padding:0;accent-color:var(--acc)}
+.anim .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.anim .cols section{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 16px}
+.anim ol,.anim ul{margin:0;padding-left:1.2em}
+.anim li{margin:4px 0;color:var(--muted)}
+.anim li.on{color:var(--fg);font-weight:700}
+</style>
+</head>
+<body>
+<div class="app">
+<aside class="side"><a class="logo" href="#dashboard"><span class="lg">🥎</span><span><b>EHC Training</b><small>Koordinasi mata dan tangan</small></span></a>
+<nav id="nav" aria-label="Menu utama"></nav>
+<button id="theme" aria-label="Ganti tema">🌓 <span>Ganti tema</span></button></aside>
+<div class="col"><main id="app"><noscript>Aktifkan JavaScript untuk memakai EHC Training: latihan digital koordinasi mata dan tangan melalui lempar tangkap bola.</noscript></main>
+<footer>EHC Training - Latihan Koordinasi Mata dan Tangan &copy; <span id="yr"></span></footer></div></div>
+
+<script>
+/* ===== DATA & PENYIMPANAN ===== */
+const KEY="ehc-training-v1";
+let S={students:[],active:null,results:[],level:0};
+try{const d=JSON.parse(localStorage.getItem(KEY));if(d)S=Object.assign(S,d)}catch(e){}
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}};
+const esc=t=>String(t).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const $=s=>document.querySelector(s);
+const uid=()=>Date.now().toString(36)+Math.random().toString(36).slice(2,5);
+
+/* ===== KONFIGURASI (silakan ubah) ===== */
+const LV=[
+ {n:"Level 1 - Pemula",v:2.0,r:26,s:1100,t:8,d:"Bola besar dan lambat"},
+ {n:"Level 2 - Dasar",v:2.8,r:22,s:900,t:12,d:"Kecepatan sedang"},
+ {n:"Level 3 - Menengah",v:3.6,r:19,s:750,t:16,d:"Bola lebih kecil dan cepat"},
+ {n:"Level 4 - Mahir",v:4.5,r:16,s:620,t:20,d:"Reaksi cepat dibutuhkan"},
+ {n:"Level 5 - Expert",v:5.5,r:14,s:500,t:25,d:"Bola kecil, sangat cepat"}
+];
+const GAME_SEC=30;
+const PROG=[
+ {w:"Minggu 1",sesi:"3x (Sen, Rab, Jum)",dur:"15 menit",lv:"Level 1",tg:"8 tangkapan per game"},
+ {w:"Minggu 2",sesi:"3x (Sen, Rab, Jum)",dur:"20 menit",lv:"Level 2",tg:"12 tangkapan per game"},
+ {w:"Minggu 3",sesi:"3x (Sen, Rab, Jum)",dur:"20 menit",lv:"Level 3",tg:"16 tangkapan per game"},
+ {w:"Minggu 4",sesi:"3x (Sen, Rab, Jum)",dur:"25 menit",lv:"Level 4-5",tg:"20-25 tangkapan, akurasi 80%"}
+];
+
+/* ===== UTIL ===== */
+const stu=()=>S.students.find(x=>x.id===S.active);
+const myRes=()=>S.results.filter(r=>!S.active||r.sid===S.active);
+const unlocked=i=>i===0||myRes().some(r=>r.level===i-1&&r.catch>=LV[i-1].t);
+const fmt=t=>new Date(t).toLocaleDateString("id-ID",{day:"2-digit",month:"short",year:"2-digit"});
+
+/* ===== HALAMAN ===== */
+const MENU=[["dashboard","Dashboard","🏠"],["profil","Profil Murid","🧒"],["video","Video Tutorial","🎬"],["game","Game Training","🎮"],["level","Level Training","🏅"],["program","Program Latihan","📅"],["hasil","Hasil Latihan","📊"],["panduan","Panduan","📖"]];
+const P={};
+
+P.dashboard=()=>{
+ const r=myRes(),n=r.length,avg=n?Math.round(r.reduce((a,b)=>a+b.score,0)/n):0,best=n?Math.max(...r.map(x=>x.score)):0;
+ const lvl=Math.max(1,...LV.map((_,i)=>unlocked(i)?i+1:0));
+ const last=r.slice(-7),mx=Math.max(1,...last.map(x=>x.score));
+ const dn=new Date().getDay(),day=["Minggu","Senin","Selasa","Rabu","Kamis","Jumat","Sabtu"][dn],train=[1,3,5].includes(dn);
+ const st=[["🏃","c1",n,"Total sesi latihan"],["📈","c2",avg,"Rata-rata skor"],["🏆","c3",best,"Skor terbaik"],["🚀","c4","Level "+lvl,"Level terbuka"]];
+ return `<section class="hero"><div><h1>Halo${stu()?", "+esc(stu().name):""} 👋</h1>
+ <p>Yuk latih koordinasi mata dan tangan lewat lempar tangkap bola. Makin rutin, makin tepat gerakanmu.</p>
+ <div class="row"><a class="btn" href="#game">Mulai Game Training</a><a class="btn ghost" href="#video">Lihat animasi teknik</a></div></div>
+ <svg class="ball" viewBox="0 0 160 200" aria-hidden="true"><ellipse class="sh" cx="80" cy="186" rx="44" ry="8" fill="rgba(0,0,0,.3)"/><g class="bb"><circle cx="80" cy="70" r="50" fill="#ffb703"/><path d="M44 36C70 56 70 84 44 104M116 36C90 56 90 84 116 104" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round" opacity=".85"/></g></svg></section>
+ <div class="grid stats">${st.map(s=>`<div class="card stat"><i class="${s[1]}">${s[0]}</i><b>${s[2]}</b><small>${s[3]}</small></div>`).join("")}</div>
+ <div class="grid two"><div class="card"><h2>Progres 7 sesi terakhir</h2>
+ ${last.length?`<div class="bars">${last.map(x=>`<div style="height:${x.score/mx*100}%"><span>${x.score}</span></div>`).join("")}</div>`:`<p class="sub">Belum ada data. Mainkan game pertamamu.</p><a class="btn" href="#game">Main sekarang</a>`}</div>
+ <div class="card"><h2>Jadwal hari ini</h2><p><b>${day}</b>: ${train?"hari latihan. Ikuti durasi di Program Latihan.":"hari istirahat atau latihan bebas."}</p>
+ <a class="btn alt" href="#program">Lihat program</a></div></div>`;
+};
+
+P.profil=()=>{
+ const groups=[...new Set(S.students.map(s=>s.group).filter(Boolean))];
+ return `<h1>Profil Murid</h1><p class="sub">Kelola data murid dan kelompok latihan.</p>
+ <div class="grid"><div class="card"><h2>Tambah Murid</h2>
+ <label>Nama</label><input id="pn" placeholder="Nama murid">
+ <label>Usia (tahun)</label><input id="pa" type="number" min="3" max="99">
+ <label>Kelas</label><input id="pc" placeholder="Contoh: 4A">
+ <label>Kelompok latihan</label><input id="pg" list="gl" placeholder="Contoh: Kelompok A"><datalist id="gl">${groups.map(g=>`<option value="${esc(g)}">`).join("")}</datalist>
+ <br><br><button class="btn" id="addS">Simpan Murid</button></div>
+ <div class="card"><h2>Daftar Murid (${S.students.length})</h2>
+ ${S.students.length?`<div class="wrap"><table><tr><th>Nama</th><th>Kelas</th><th>Kelompok</th><th></th></tr>
+ ${S.students.map(s=>`<tr><td>${esc(s.name)}${s.age?` <small class="tag">${esc(s.age)} th</small>`:""}</td><td>${esc(s.cls||"-")}</td><td>${esc(s.group||"-")}</td>
+ <td>${S.active===s.id?'<span class="ok">Aktif</span>':`<button class="btn alt" data-use="${s.id}">Pilih</button>`} <button class="btn alt" data-rm="${s.id}">Hapus</button></td></tr>`).join("")}</table></div>`:`<p class="sub">Belum ada murid.</p>`}</div></div>`;
+};
+
+P.video=()=>`<h1>Video Tutorial</h1><p class="sub">Animasi gerak dasar lempar dan tangkap. Pilih animasi, lalu putar, jeda, atau geser untuk melihat tiap tahap gerakan.</p>
+ <div class="anim"><div class="tabs" id="tabs" role="tablist"></div>
+ <div class="stage"><svg id="svg" viewBox="0 0 760 360" role="img" aria-label="Animasi gerakan lempar tangkap"></svg><div class="cap" id="cap"></div></div>
+ <div class="ctl"><button id="pp">Jeda</button><button id="rs">Ulangi</button>
+ <select id="sp" aria-label="Kecepatan"><option value="1">Kecepatan 1x</option><option value="0.5">Kecepatan 0,5x</option></select>
+ <input type="range" id="sl" min="0" max="1000" value="0" aria-label="Posisi animasi"></div>
+ <div class="cols"><section><h2>Tahapan gerakan</h2><ol id="steps"></ol></section><section><h2>Poin kunci</h2><ul id="tips"></ul></section></div></div>`;
+
+P.level=()=>`<h1>Level Training</h1><p class="sub">Capai target tangkapan untuk membuka level berikutnya.</p>
+ <div class="grid">${LV.map((l,i)=>{const u=unlocked(i),b=Math.max(0,...myRes().filter(x=>x.level===i).map(x=>x.catch)),p=Math.min(100,Math.round(b/l.t*100));
+ return `<div class="card lv ${u?"":"lock"}"><div class="lvn">${i+1}</div><span class="tag">${u?(p>=100?"Selesai ✅":"Terbuka"):"Terkunci 🔒"}</span>
+ <h2 style="margin-top:10px">${l.n}</h2><p class="sub" style="margin-bottom:6px">${l.d}</p>
+ <div class="prog"><i style="width:${p}%"></i></div><small>Terbaik ${b} dari target ${l.t} tangkapan</small>
+ ${u?`<div style="margin-top:12px"><button class="btn" data-play="${i}">Latih di level ini</button></div>`:""}</div>`}).join("")}</div>`;
+
+P.program=()=>`<h1>Program Latihan</h1><p class="sub">Jadwal 4 minggu lengkap dengan durasi dan target tiap tahap.</p>
+ <div class="grid two">${PROG.map(p=>`<div class="card pr"><span class="wk">${p.w}</span><ul><li>📅 ${p.sesi}</li><li>⏱️ Durasi ${p.dur}</li><li>🏅 ${p.lv}</li><li>🎯 ${p.tg}</li></ul></div>`).join("")}</div>`;
+
+P.hasil=()=>{
+ const r=myRes().slice().reverse();
+ return `<h1>Hasil Latihan</h1><p class="sub">Skor dan perkembangan${stu()?" untuk "+esc(stu().name):" semua murid"}.</p>
+ <div class="card">${r.length?`<div class="wrap"><table><tr><th>Tanggal</th><th>Murid</th><th>Level</th><th>Tangkap</th><th>Lewat</th><th>Akurasi</th><th>Skor</th></tr>
+ ${r.map(x=>`<tr><td>${fmt(x.date)}</td><td>${esc(x.name)}</td><td>${x.level+1}</td><td>${x.catch}</td><td>${x.miss}</td><td>${x.acc}%</td><td><b>${x.score}</b></td></tr>`).join("")}</table></div>
+ <br><button class="btn" id="csv">Unduh CSV</button> <button class="btn del" id="clr">Hapus Semua Hasil</button>`:`<p class="sub">Belum ada hasil. Mainkan Game Training.</p>`}</div>`;
+};
+
+P.panduan=()=>`<h1>Panduan Penggunaan</h1><p class="sub">Latihan tes motorik EHC (Eye-Hand Coordination) lempar tangkap bola.</p>
+ <div class="card">
+ <details open><summary>Apa itu EHC?</summary><p>EHC adalah kemampuan mata dan tangan bekerja sama, misalnya melihat bola lalu menangkapnya dengan tepat. Kemampuan ini penting untuk olahraga dan aktivitas harian.</p></details>
+ <details><summary>1. Siapkan murid</summary><p>Buka menu Profil Murid, tambahkan nama, lalu pilih murid yang akan berlatih.</p></details>
+ <details><summary>2. Tonton animasi tutorial</summary><p>Buka menu Video Tutorial dan pelajari posisi tubuh, tangan, dan arah pandang sebelum bermain.</p></details>
+ <details><summary>3. Mainkan Game Training</summary><p>Gerakkan sarung tangan dengan mouse, jari di layar sentuh, atau tombol panah kiri dan kanan. Tangkap bola yang jatuh selama ${GAME_SEC} detik.</p></details>
+ <details><summary>4. Naik level</summary><p>Capai target tangkapan di suatu level agar level berikutnya terbuka.</p></details>
+ <details><summary>5. Ikuti program latihan</summary><p>Latihan 3 kali seminggu sesuai tabel Program Latihan, lalu pantau perkembangan di Hasil Latihan.</p></details>
+ <details><summary>Tips keselamatan</summary><p>Berlatih di tempat lapang, gunakan bola lunak untuk latihan fisik, dan istirahat bila lelah. Skor digital adalah alat bantu, bukan diagnosis medis.</p></details></div>`;
+
+/* ===== GAME ===== */
+let G=null;
+function bg(c){const g=c.createLinearGradient(0,0,0,400);g.addColorStop(0,"#13286b");g.addColorStop(1,"#1d4ed8");c.fillStyle=g;c.fillRect(0,0,640,400);c.fillStyle="rgba(255,255,255,.08)";c.fillRect(0,354,640,46);c.fillStyle="rgba(255,255,255,.25)";c.fillRect(0,354,640,2)}
+P.game=()=>`<h1>Game Training</h1><p class="sub">Tangkap bola yang jatuh dengan sarung tangan. Gerakkan dengan mouse, sentuhan, atau tombol panah.</p>
+ <div class="card"><div class="hud"><div style="min-width:200px"><label>Level</label><select id="glv">${LV.map((l,i)=>`<option value="${i}" ${i===S.level?"selected":""} ${unlocked(i)?"":"disabled"}>${l.n}${unlocked(i)?"":" (terkunci)"}</option>`).join("")}</select></div></div>
+ <div class="hud" style="margin-top:10px"><span class="tag" id="h1">Skor 0</span><span class="tag" id="h2">Tangkap 0</span><span class="tag" id="h3">Lewat 0</span><span class="tag" id="h4">Waktu ${GAME_SEC}</span></div>
+ <canvas id="cv" width="640" height="400" aria-label="Area game tangkap bola"></canvas>
+ <div style="text-align:center"><button class="btn" id="go">Mulai</button></div><div id="res"></div></div>`;
+
+function startGame(){
+ const cv=$("#cv"),c=cv.getContext("2d"),W=640,H=400,L=LV[S.level];
+ const g=G={run:true,x:W/2,balls:[],t0:performance.now(),last:performance.now(),sp:0,ca:0,mi:0,key:{}};
+ $("#res").innerHTML="";$("#go").disabled=true;
+ const mv=e=>{const b=cv.getBoundingClientRect();g.x=(e.clientX-b.left)*W/b.width};
+ cv.onpointermove=mv;cv.onpointerdown=mv;
+ g.kd=e=>{if(e.key==="ArrowLeft")g.key.l=1;if(e.key==="ArrowRight")g.key.r=1};
+ g.ku=e=>{if(e.key==="ArrowLeft")g.key.l=0;if(e.key==="ArrowRight")g.key.r=0};
+ addEventListener("keydown",g.kd);addEventListener("keyup",g.ku);
+ const cw=96;
+ (function loop(now){
+  if(!g.run)return;
+  const dt=Math.min(40,now-g.last)/16.67;g.last=now;
+  const left=Math.max(0,GAME_SEC-(now-g.t0)/1000);
+  if(g.key.l)g.x-=7*dt;if(g.key.r)g.x+=7*dt;
+  g.x=Math.max(cw/2,Math.min(W-cw/2,g.x));
+  g.sp+=dt*16.67;
+  if(g.sp>=L.s){g.sp=0;g.balls.push({x:L.r+Math.random()*(W-2*L.r),y:-L.r,c:["#f59e0b","#ef4444","#3b82f6","#22c55e"][Math.random()*4|0]})}
+  bg(c);
+  for(let i=g.balls.length-1;i>=0;i--){
+   const b=g.balls[i];b.y+=L.v*dt;
+   if(b.y+L.r>=H-46&&b.y<H-20&&Math.abs(b.x-g.x)<=cw/2+L.r*.4){g.ca++;g.balls.splice(i,1);continue}
+   if(b.y-L.r>H){g.mi++;g.balls.splice(i,1);continue}
+   c.beginPath();c.arc(b.x,b.y,L.r,0,7);c.fillStyle=b.c;c.fill();
+   c.beginPath();c.arc(b.x-L.r/3,b.y-L.r/3,L.r/4,0,7);c.fillStyle="rgba(255,255,255,.5)";c.fill();
+  }
+  c.font="44px serif";c.textAlign="center";c.fillText("🧤",g.x,H-14);
+  const sc=Math.max(0,g.ca*10-g.mi*2);
+  $("#h1").textContent="Skor "+sc;$("#h2").textContent="Tangkap "+g.ca;$("#h3").textContent="Lewat "+g.mi;$("#h4").textContent="Waktu "+Math.ceil(left);
+  if(left<=0)return endGame(sc);
+  g.raf=requestAnimationFrame(loop);
+ })(performance.now());
+}
+function stopGame(){if(G){G.run=false;cancelAnimationFrame(G.raf);removeEventListener("keydown",G.kd);removeEventListener("keyup",G.ku)}}
+function endGame(sc){
+ stopGame();const L=LV[S.level],tot=G.ca+G.mi,acc=tot?Math.round(G.ca/tot*100):0,ok=G.ca>=L.t;
+ S.results.push({date:Date.now(),sid:S.active||"",name:stu()?stu().name:"Tamu",level:S.level,score:sc,catch:G.ca,miss:G.mi,acc});save();
+ $("#go").disabled=false;$("#go").textContent="Main Lagi";
+ const stars=ok?(acc>=80?3:2):(G.ca>=L.t/2?1:0);const next=ok&&S.level<LV.length-1?` Level ${S.level+2} terbuka.`:"";
+ $("#res").innerHTML=`<div class="msg"><div class="stars">${"⭐".repeat(stars)||"💪"}</div><b>${ok?"Target tercapai! 🎉":"Belum mencapai target."}</b><br>Skor ${sc}, tangkap ${G.ca} dari target ${L.t}, akurasi ${acc}%.${next}</div>`;
+ const o=$("#glv");if(o)o.innerHTML=LV.map((l,i)=>`<option value="${i}" ${i===S.level?"selected":""} ${unlocked(i)?"":"disabled"}>${l.n}${unlocked(i)?"":" (terkunci)"}</option>`).join("");
+}
+
+/* ===== ANIMASI TEKNIK LEMPAR TANGKAP ===== */
+let animStop=()=>{};
+function mountAnim(){
+
+const GY=300,NS='http://www.w3.org/2000/svg';
+const P={
+ready:{l:0,rS:40,rE:80,lS:40,lE:80},
+cock:{l:-8,rS:-80,rE:175,lS:80,lE:80},
+rel:{l:12,rS:120,rE:140,lS:40,lE:40},
+fol:{l:20,rS:30,rE:10,lS:-20,lE:-20},
+back:{l:6,rS:-35,rE:-30,lS:40,lE:70},
+up:{l:10,rS:65,rE:60,lS:40,lE:70},
+reach:{l:4,rS:85,rE:90,lS:85,lE:90},
+abs:{l:-2,rS:30,rE:100,lS:30,lE:100}};
+const sm=x=>x*x*(3-2*x),R=d=>d*Math.PI/180;
+function poseAt(q,t){
+ if(t<=q[0][0])return P[q[0][1]];
+ for(let i=1;i<q.length;i++){if(t<=q[i][0]){const[t0,a]=q[i-1],[t1,b]=q[i],k=sm((t-t0)/(t1-t0)),A=P[a],B=P[b],o={};for(const n in A)o[n]=A[n]+(B[n]-A[n])*k;return o}}
+ return P[q[q.length-1][1]]}
+function solve(p,x,dir){
+ const hy=GY-78,l=R(p.l),sx=x+dir*50*Math.sin(l),sy=hy-50*Math.cos(l);
+ const arm=(S,E)=>{const a=R(S),b=R(E),ex=sx+dir*27*Math.sin(a),ey=sy+27*Math.cos(a);return[[sx,sy],[ex,ey],[ex+dir*25*Math.sin(b),ey+25*Math.cos(b)]]};
+ const f=x+dir*22,b=x-dir*22,my=(hy+GY)/2;
+ return{hip:[x,hy],sh:[sx,sy],head:[sx+dir*8*Math.sin(l),sy-15],rA:arm(p.rS,p.rE),lA:arm(p.lS,p.lE),
+ legs:[[[x,hy],[(x+f)/2+dir*10,my],[f,GY]],[[x,hy],[(x+b)/2-dir*2,my],[b,GY]]]}}
+const mk=(tag,at,par)=>{const e=document.createElementNS(NS,tag);for(const k in at)e.setAttribute(k,at[k]);par&&par.appendChild(e);return e};
+const path=pts=>'M'+pts.map(p=>p[0].toFixed(1)+' '+p[1].toFixed(1)).join('L');
+function Fig(g,c){const s={fill:'none',stroke:c,'stroke-width':6,'stroke-linecap':'round','stroke-linejoin':'round'};
+ this.lA=mk('path',{...s,opacity:.5},g);this.l1=mk('path',s,g);this.l2=mk('path',s,g);this.bd=mk('path',s,g);this.rA=mk('path',s,g);
+ this.hd=mk('circle',{r:11,fill:'var(--card)',stroke:c,'stroke-width':5},g)}
+Fig.prototype.draw=function(j){this.lA.setAttribute('d',path(j.lA));this.l1.setAttribute('d',path(j.legs[0]));this.l2.setAttribute('d',path(j.legs[1]));
+ this.bd.setAttribute('d',path([j.hip,j.sh]));this.rA.setAttribute('d',path(j.rA));this.hd.setAttribute('cx',j.head[0]);this.hd.setAttribute('cy',j.head[1])};
+const fly=(a,b,p,h)=>[a[0]+(b[0]-a[0])*p,a[1]+(b[1]-a[1])*p-4*h*p*(1-p)];
+const lbl=(g,x,y,s)=>{const e=mk('text',{x,y,'text-anchor':'middle','font-size':15,'font-weight':700,fill:'var(--muted)'},g);e.textContent=s};
+const A='var(--acc)',B='var(--acc2)';
+const scenes=[
+{name:'1. Teknik dasar melempar',T:7,
+ figs:[{x:170,dir:1,c:A,seq:[[0,'ready'],[1.5,'ready'],[2.8,'cock'],[3.5,'rel'],[4.5,'fol'],[6.2,'fol'],[7,'ready']]}],
+ build(g){mk('line',{x1:640,y1:GY-94,x2:640,y2:GY,stroke:'var(--muted)','stroke-width':4},g);
+  mk('circle',{cx:640,cy:GY-120,r:26,fill:'none',stroke:'var(--acc2)','stroke-width':5,'stroke-dasharray':'8 6'},g);
+  lbl(g,640,GY-160,'Sasaran');lbl(g,170,GY+32,'Pelempar')},
+ ball(t,H){const tg=[640,GY-120];if(t<3.5||t>=6.6)return H(0,t);if(t<4.6)return fly(H(0,3.5),tg,(t-3.5)/1.1,50);return tg},
+ steps:[[0,'Sikap awal','Kaki dibuka selebar bahu, bola dipegang di depan dada, mata melihat sasaran.'],[1.5,'Tarik lengan ke belakang','Lengan pelempar ditarik ke belakang dengan siku ditekuk, tangan lain lurus menunjuk sasaran.'],[2.8,'Ayun ke depan','Berat badan pindah ke depan, pinggul berputar, lengan didorong ke depan atas.'],[3.5,'Lepas bola','Bola dilepas saat lengan hampir lurus, jari mengikuti arah bola.'],[4.5,'Gerak lanjutan','Lengan terus mengayun ke depan bawah agar lemparan halus dan terarah.']],
+ tips:['Tunjuk sasaran dengan tangan yang tidak melempar.','Gerakan dimulai dari kaki, pinggul, bahu, lalu lengan.','Lepas bola di depan kepala, bukan di samping badan.','Selesaikan ayunan sampai gerak lanjutan.']},
+{name:'2. Teknik dasar menangkap',T:8,
+ figs:[{x:170,dir:1,c:A,seq:[[0,'ready'],[2,'ready'],[3.2,'reach'],[3.4,'reach'],[4.4,'abs'],[6.5,'abs'],[7.5,'ready'],[8,'ready']]},
+  {x:590,dir:-1,c:B,seq:[[0,'ready'],[1.2,'back'],[2.2,'up'],[3.2,'ready'],[8,'ready']]}],
+ build(g){lbl(g,170,GY+32,'Penangkap');lbl(g,590,GY+32,'Pelempar')},
+ ball(t,H){if(t<2.2||t>=7.5)return H(1,t);if(t<3.4)return fly(H(1,2.2),H(0,t),(t-2.2)/1.2,60);return H(0,t)},
+ steps:[[0,'Siap menangkap','Kaki selebar bahu, lutut sedikit ditekuk, kedua tangan di depan dada.'],[1.2,'Awasi bola','Mata terus mengikuti bola dari tangan pelempar.'],[3.0,'Jangkau bola','Ulurkan kedua tangan ke arah bola, jari terbuka membentuk mangkuk.'],[3.4,'Tangkap dua tangan','Bola ditangkap dengan jari dan telapak, bukan dengan dada.'],[4.4,'Redam tenaga','Tarik siku ke arah dada agar bola tidak memantul keluar.'],[6.5,'Pegang bola','Bola dipegang kuat di depan dada, siap dilempar kembali.']],
+ tips:['Mata tidak lepas dari bola sampai bola di tangan.','Jari terbuka dan rileks, bukan kaku.','Tarik tangan ke dada saat bola menyentuh untuk meredam.','Lutut ditekuk agar mudah bergerak ke arah bola.']},
+{name:'3. Lempar tangkap ke dinding',T:9,
+ figs:[{x:170,dir:1,c:A,seq:[[0,'ready'],[1,'cock'],[1.7,'rel'],[2.6,'ready'],[3.4,'reach'],[4.6,'abs'],[6.5,'abs'],[7.5,'ready'],[9,'ready']]}],
+ build(g){mk('rect',{x:640,y:GY-210,width:26,height:210,fill:'var(--line)',stroke:'var(--muted)','stroke-width':2},g);
+  mk('circle',{cx:628,cy:GY-115,r:14,fill:'none',stroke:'var(--acc2)','stroke-width':4},g);
+  lbl(g,653,GY-222,'Dinding');lbl(g,170,GY+32,'Pemain')},
+ ball(t,H){const w=[628,GY-115];if(t<1.7||t>=3.6)return H(0,t);if(t<2.5)return fly(H(0,1.7),w,(t-1.7)/.8,15);return fly(w,H(0,t),(t-2.5)/1.1,40)},
+ steps:[[0,'Posisi awal','Berdiri berhadapan dengan dinding, bola di depan dada.'],[1,'Ayun dan lempar','Ayunkan lengan ke belakang, lalu lempar ke titik sasaran di dinding.'],[2.5,'Bola memantul','Perhatikan arah pantulan bola dari dinding.'],[3.4,'Siap menangkap','Ulurkan kedua tangan, tangkap bola dengan jari terbuka.'],[4.6,'Redam dan kuasai','Tarik siku ke dada, pegang bola dengan kuat.'],[6.5,'Ulangi','Ulangi lemparan dan tangkapan secara berkelanjutan.']],
+ tips:['Tentukan titik sasaran di dinding sebelum melempar.','Lempar dengan tenaga sedang agar pantulan mudah ditangkap.','Mulai dari jarak dekat, lalu jauhkan perlahan.','Naikkan tantangan dengan melempar tangan kiri dan kanan bergantian.']},
+{name:'4. Lempar tangkap berpasangan',T:12,
+ figs:[{x:170,dir:1,c:A,seq:[[0,'ready'],[.8,'back'],[1.6,'up'],[2.4,'ready'],[5.8,'ready'],[7,'reach'],[8,'abs'],[10.5,'abs'],[11.5,'ready'],[12,'ready']]},
+  {x:590,dir:-1,c:B,seq:[[0,'ready'],[2,'ready'],[2.8,'reach'],[3.6,'abs'],[4.8,'abs'],[5.2,'back'],[6,'up'],[6.8,'ready'],[12,'ready']]}],
+ build(g){lbl(g,170,GY+32,'Pemain A');lbl(g,590,GY+32,'Pemain B')},
+ ball(t,H){if(t<1.6)return H(0,t);if(t<2.8)return fly(H(0,1.6),H(1,t),(t-1.6)/1.2,60);if(t<6)return H(1,t);if(t<7.2)return fly(H(1,6),H(0,t),(t-6)/1.2,60);return H(0,t)},
+ steps:[[0,'Berhadapan','Dua pemain berdiri berhadapan, mulai dari jarak dekat.'],[0.8,'Pemain A melempar','Ayunan bawah ke arah dada teman, lengan mengikuti arah bola.'],[2.8,'Pemain B menangkap','Jangkau bola dengan dua tangan, mata mengikuti bola.'],[3.6,'Redam bola','Tarik bola ke dada agar tidak memantul.'],[5.2,'Pemain B melempar balik','Ayun ke belakang, lempar kembali ke Pemain A.'],[7,'Pemain A menangkap','Ulurkan tangan, tangkap, lalu redam di dada.'],[10.5,'Ulangi bergantian','Lanjutkan lempar tangkap, jauhkan jarak bila sudah lancar.']],
+ tips:['Lempar ke arah dada teman agar mudah ditangkap.','Beri aba-aba atau kontak mata sebelum melempar.','Jarak ditambah sedikit demi sedikit.','Bergantian peran supaya kedua pemain berlatih melempar dan menangkap.']}];
+const svg=document.getElementById('svg'),cap=document.getElementById('cap'),stepsEl=document.getElementById('steps'),tipsEl=document.getElementById('tips'),sl=document.getElementById('sl'),pp=document.getElementById('pp'),tabs=document.getElementById('tabs');
+let S,ball,t=0,playing=true,speed=1,last=0,alive=true,raf=0;
+const H=(i,tt)=>{const f=S.figs[i];return solve(poseAt(f.seq,tt),f.x,f.dir).rA[2]};
+function load(i){S=scenes[i];t=0;svg.innerHTML='';
+ mk('rect',{x:0,y:GY,width:760,height:60,fill:'var(--ground)'},svg);mk('line',{x1:0,y1:GY,x2:760,y2:GY,stroke:'var(--muted)','stroke-width':2},svg);
+ S.build(svg);S.figs.forEach(f=>f.o=new Fig(svg,f.c));
+ ball=mk('circle',{r:10,fill:'#f59f00',stroke:'#b35c00','stroke-width':2.5},svg);
+ stepsEl.innerHTML=S.steps.map(s=>'<li><b>'+s[1]+'</b><br>'+s[2]+'</li>').join('');
+ tipsEl.innerHTML=S.tips.map(s=>'<li>'+s+'</li>').join('');
+ [...tabs.children].forEach((b,k)=>b.setAttribute('aria-selected',k===i));render()}
+function render(){
+ S.figs.forEach(f=>f.o.draw(solve(poseAt(f.seq,t),f.x,f.dir)));
+ const b=S.ball(t,H);ball.setAttribute('cx',b[0]);ball.setAttribute('cy',b[1]);
+ let k=0;S.steps.forEach((s,n)=>{if(s[0]<=t)k=n});
+ [...stepsEl.children].forEach((li,n)=>li.className=n===k?'on':'');
+ cap.innerHTML='<b>'+S.steps[k][1]+'</b>'+S.steps[k][2];sl.value=t/S.T*1000}
+function tick(ts){if(!alive)return;if(playing){const dt=Math.min((ts-last)/1000,.1);t=(t+dt*speed)%S.T;render()}last=ts;raf=requestAnimationFrame(tick)}
+scenes.forEach((s,i)=>{const b=document.createElement('button');b.textContent=s.name;b.setAttribute('role','tab');b.onclick=()=>load(i);tabs.appendChild(b)});
+pp.onclick=()=>{playing=!playing;pp.textContent=playing?'Jeda':'Putar'};
+document.getElementById('rs').onclick=()=>{t=0;playing=true;pp.textContent='Jeda';render()};
+document.getElementById('sp').onchange=e=>speed=+e.target.value;
+sl.oninput=()=>{t=sl.value/1000*S.T;render()};
+load(0);last=performance.now();raf=requestAnimationFrame(tick);animStop=()=>{alive=false;cancelAnimationFrame(raf)};
+
+}
+
+/* ===== ROUTER & EVENT ===== */
+function route(){
+ stopGame();animStop();animStop=()=>{};
+ const k=(location.hash.slice(1)||"dashboard");const key=P[k]?k:"dashboard";
+ $("#nav").innerHTML=MENU.map(m=>`<a href="#${m[0]}" class="${m[0]===key?"on":""}" ${m[0]===key?'aria-current="page"':""}><span class="ic">${m[2]}</span><span>${m[1]}</span></a>`).join("");
+ document.querySelector("nav a.on").scrollIntoView({inline:"center",block:"nearest"});
+ $("#app").innerHTML=P[key]();window.scrollTo(0,0);
+ document.title=(key==="dashboard"?"":MENU.find(m=>m[0]===key)[1]+" - ")+"EHC Training - Latihan Koordinasi Mata dan Tangan";
+ bind(key);
+}
+function bind(k){
+ if(k==="video")mountAnim();
+ if(k==="profil"){
+  $("#addS").onclick=()=>{const n=$("#pn").value.trim();if(!n)return alert("Nama wajib diisi");
+   const s={id:uid(),name:n,age:$("#pa").value,cls:$("#pc").value.trim(),group:$("#pg").value.trim()};
+   S.students.push(s);S.active=S.active||s.id;save();route()};
+  document.querySelectorAll("[data-use]").forEach(b=>b.onclick=()=>{S.active=b.dataset.use;save();route()});
+  document.querySelectorAll("[data-rm]").forEach(b=>b.onclick=()=>{if(!confirm("Hapus murid ini beserta hasilnya?"))return;
+   const id=b.dataset.rm;S.students=S.students.filter(s=>s.id!==id);S.results=S.results.filter(r=>r.sid!==id);if(S.active===id)S.active=S.students[0]?.id||null;save();route()});
+ }
+ if(k==="level")document.querySelectorAll("[data-play]").forEach(b=>b.onclick=()=>{S.level=+b.dataset.play;save();location.hash="game"});
+ if(k==="game"){
+  $("#glv").onchange=e=>{S.level=+e.target.value;save()};
+  $("#go").onclick=()=>{S.level=+$("#glv").value;save();startGame()};
+  const c=$("#cv").getContext("2d");bg(c);c.fillStyle="#fff";c.font="20px system-ui";c.textAlign="center";c.fillText("Tekan Mulai untuk bermain",320,200);
+ }
+ if(k==="hasil"&&$("#csv")){
+  $("#csv").onclick=()=>{const rows=[["Tanggal","Murid","Level","Tangkap","Lewat","Akurasi","Skor"],...myRes().map(x=>[new Date(x.date).toISOString(),x.name,x.level+1,x.catch,x.miss,x.acc,x.score])];
+   const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([rows.map(r=>r.map(v=>'"'+String(v).replace(/"/g,'""')+'"').join(",")).join("\n")],{type:"text/csv"}));a.download="hasil-latihan-ehc.csv";a.click()};
+  $("#clr").onclick=()=>{if(confirm("Hapus semua hasil latihan?")){S.results=S.results.filter(r=>S.active&&r.sid!==S.active);save();route()}};
+ }
+}
+$("#theme").onclick=()=>{const d=document.documentElement,dark=d.dataset.theme?d.dataset.theme==="dark":matchMedia("(prefers-color-scheme:dark)").matches;d.dataset.theme=dark?"light":"dark"};
+$("#yr").textContent=new Date().getFullYear();
+addEventListener("hashchange",route);route();
+</script>
+</body>
+</html>
